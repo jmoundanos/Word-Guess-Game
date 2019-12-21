@@ -6,7 +6,7 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: 'Playfair Display SC', serif;
+    font-family: 'Lilita One', cursive;
     
 }
 .container-fluid{
@@ -14,20 +14,39 @@ body{
     }
 .row{
     height: 33.33%
-   
+}
+.smallRow{
+    height: 50%;
+    
+}
+.col-6{
+    height: 100%;
+    padding: 0;
+    border: 2px solid #4A5054;
+}
+
+p, h3{
+    color: #4A5054;
+    text-align: center;
 }
 h1{
     padding-top: 120px;
     text-align: center;
     font-size: 4rem;
-    color:#BFCDD9;
+    color:#A8B5BF;
 }
-h4{
-    padding-top: 230px;
+#key{
+    padding-top: 210px;
     padding-left: 550px;
     color: #4A5054;
 }
-@media only screen and (max-width: 830px){
+#secondRow{
+    margin: 0 10px 0 10px;
+}
+#showBorder{
+    border-bottom: 1px solid #4A5054;
+}
+@media only screen and (max-width: 870px){
     h4{
         padding-left: 400px;
     }
