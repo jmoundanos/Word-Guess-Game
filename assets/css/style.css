@@ -46,6 +46,10 @@ h1{
 #showBorder{
     border-bottom: 1px solid #4A5054;
 }
+#wordToGuess{
+    font-size: 75px;
+    test-align: center;
+}
 @media only screen and (max-width: 870px){
     h4{
         padding-left: 400px;
