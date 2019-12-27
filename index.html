@@ -9,6 +9,7 @@
         <title>Horse Words Guessing Game</title>
     </head>
     <body>
+        <div class="full-image">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
@@ -16,10 +17,11 @@
                 </div>
             </div>
             <div id="secondRow" class="row">
-                <div class="col-6">
+                <div class="col-8">
                     <p id="wordToGuess"></p>
+                    <p id="congrats"></p>
                 </div>
-                <div class="col-6">
+                <div class="col-4">
                     <div id="showBorder" class="smallRow">
                         <div class="col">
                             <p>Letters Guessed</p>
@@ -28,7 +30,7 @@
                     </div>
                     <div class="smallRow">
                         <div class="col">
-                            <h3>Wins: </h3>
+                            <h3>Wins</h3>
                             <h3 id="wins"></h3>
                         </div>
                     </div>
@@ -42,7 +44,7 @@
                </div>
             </div>
         </div>
-        
+        </div>
         
         <script src="assets/javascript/games.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

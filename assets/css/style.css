@@ -1,17 +1,20 @@
 
 body{
-    background: url("../images/chestnut_horse.jpg");
     height: auto;
+    font-family: 'Lilita One', cursive;  
+  
+}
+.full-image{
+    background-image: url("../images/chestnut_horse_edit.png");
     min-height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: 'Lilita One', cursive;
-    
+  
 }
 .container-fluid{
     height: 100vh;
-    }
+}
 .row{
     height: 33.33%
 }
@@ -19,53 +22,61 @@ body{
     height: 50%;
     
 }
-.col-6{
+.col-6, .col-8, .col-4{
     height: 100%;
     padding: 0;
-    border: 2px solid #4A5054;
+    border: 2px solid #383C40;
 }
 
 p, h3{
-    color: #4A5054;
+    color: #383C40;
     text-align: center;
 }
 h1{
     padding-top: 120px;
     text-align: center;
     font-size: 4rem;
-    color:#A8B5BF;
+    color:#707980;
 }
 #key{
-    padding-top: 210px;
+    padding-top: 170px;
     padding-left: 550px;
-    color: #4A5054;
+    color: #383C40;
 }
 #secondRow{
     margin: 0 10px 0 10px;
 }
 #showBorder{
-    border-bottom: 1px solid #4A5054;
+    border-bottom: 1px solid #383C40;
 }
 #wordToGuess{
     font-size: 75px;
-    test-align: center;
+    text-align: center;
 }
 @media only screen and (max-width: 870px){
-    h4{
-        padding-left: 400px;
+    #key{
+        padding-left: 350px;
     }
+    
+    
 }
-@media only screen and (max-width: 670px){
-    h4{
-        padding-left: 200px;
-    }
-}
-@media only screen and (max-width: 475px){
-    h4{
+@media only screen and (max-width: 630px){
+    #key{
         padding-left: 100px;
-        padding-top: 225px;
+    }
+}
+@media only screen and (max-width: 530px){
+    #key{
+        padding-left: 75px;
+        padding-top: 150px;
     }
     h1{
-        font-size: 3.5rem;
+        font-size: 3rem;
+    }
+}
+@media only screen and (max-width: 270px){
+    
+    h1{
+        font-size: 2rem;
     }
 }
