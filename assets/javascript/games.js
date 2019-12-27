@@ -38,6 +38,7 @@ document.onkeyup = function(event){
                 spacesAndCorrectLetter[k] = letterGuess;
                 guessCounter--;
                 document.getElementById("wordToGuess").innerHTML = spacesAndCorrectLetter.join("");
+                document.getElementById("guessesRemaining").innerHTML = guessCounter;
             }
         }
 
@@ -45,11 +46,16 @@ document.onkeyup = function(event){
         wrongLetter.push(letterGuess);
         document.getElementById("guessedLetters").innerHTML = wrongLetter.join("");
         guessCounter--;
+        document.getElementById("guessesRemaining").innerHTML = guessCounter;
      }
-}
+
     if(letterArray.toString() == spacesAndCorrectLetter.toString()){
         wins++;
         document.getElementById("wins").innerHTML = wins;
         document.getElementById("congrats").innerHTML = "You win!";
     }
+    if(guessCounter === 0){
+        document.getElementById("wordToGuess").innerHTML = "Game over";
+    }
+}
 }

@@ -19,7 +19,7 @@ body{
     height: 33.33%
 }
 .smallRow{
-    height: 50%;
+    height: 33.3%;
     
 }
 .col-6, .col-8, .col-4{
@@ -46,7 +46,7 @@ h1{
 #secondRow{
     margin: 0 10px 0 10px;
 }
-#showBorder{
+#showBorder, #remaining{
     border-bottom: 1px solid #383C40;
 }
 #wordToGuess{
