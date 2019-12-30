@@ -11,6 +11,8 @@ var spaces = [];
 var spacesAndCorrectLetter = [];
 var wrongLetter = [];
 
+function startGame(){ 
+    reset();
 document.onkeyup = function(){
     //select random word
     randomWord = wordsToGuess[Math.floor(Math.random() * wordsToGuess.length)];
@@ -22,9 +24,10 @@ document.onkeyup = function(){
         }
     document.getElementById("wordToGuess").innerHTML = "  " + spacesAndCorrectLetter.join(" ");
     console.log(randomWord);
-
+    playGame();
+}}
+function playGame(){
 document.onkeyup = function(event){
-    //guessCounter++;
     var letterGuess = event.key;
     var letter = false;
     for(var j = 0; j < spaces; j++){
@@ -53,9 +56,20 @@ document.onkeyup = function(event){
         wins++;
         document.getElementById("wins").innerHTML = wins;
         document.getElementById("congrats").innerHTML = "You win!";
+        startGame();
     }
     if(guessCounter === 0){
-        document.getElementById("wordToGuess").innerHTML = "Game over";
+        document.getElementById("congrats").innerHTML = "You lose";
+        startGame();
     }
 }
+}
+startGame();
+
+function reset(){
+   letterArray = [];
+   spacesAndCorrectLetter = [];
+   guessCounter = 15; 
+   wrongLetter = [];
+  // document.getElementById("congrats").innerHTML = " ";
 }
